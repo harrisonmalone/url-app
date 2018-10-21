@@ -1,0 +1,6 @@
+<h1>Link shortener</h1>
+
+<%= form_for(Link.new, url: link_path) do |f| %>
+  <%= f.text_field :original_url %>
+  <%= f.submit "Create short link" %>
+<% end %>

@@ -1,0 +1,6 @@
+<h1>Your new link</h1>
+
+<p>Your old link: <strong><%= @link.original_url %></strong></p>
+<p>Your new link: <strong>localhost:3000/<%= @link.hash_value %></strong></p>
+
+<%= link_to "Go to link", go_to_link_path(@link.hash_value) %>
